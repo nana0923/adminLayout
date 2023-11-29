@@ -90,13 +90,13 @@
       <div id="lnb" class="lnb">
         <ul class="lnb_wrap"> 
           <li class="op">
-            <span>문의하기</span>
+            <span>이벤트1</span>
           </li>	
           <li>
             <img src="./assets/pc/images/depth_arrow.svg" alt="">
           </li>	
           <li>
-            <span>문의 리스트</span>
+            <span>이벤트1 리스트</span>
           </li>		
         </ul>
       </div>  
@@ -105,8 +105,8 @@
     <main id="wrap">
       <div id="snb" class="snb">
         <div class="snb_wrap">
-          <p class="one_depth">문의하기</p>
-          <p class="two_depth">문의 리스트</p>
+          <p class="one_depth">이벤트1</p>
+          <p class="two_depth">이벤트1 리스트</p>
         </div>
       </div>
       <div class="container dashboard">
@@ -118,23 +118,40 @@
                   <input type="text" class="search_box" value="" placeholder="이름, 이메일 등 검색어를 입력하세요." id="search_box" />
                 </div>
                 <div class="cate_box">
-                  <select id="answer">
-                    <option selected>--답변여부--</option>
-                    <option value="N">미답변</option>
-                    <option value="Y">답변완료</option>
+                  <select id="type">
+                    <option selected>--소속--</option>
+                    <option value="a">학부생</option>
+                    <option value="b">대학원생</option>
+                    <option value="c">직장인</option>
+                    <option value="d">관련 업계 종사자</option>
+                    <option value="e">그외</option>
+                  </select>
+                </div>
+                <div class="cate_box">
+                  <select id="tag">
+                    <option selected>--질문태그--</option>
+                    <option value="1">태그1</option>
+                    <option value="2">태그2</option>
+                    <option value="3">태그3</option>
+                    <option value="4">태그4</option>
+                    <option value="5">태그5</option>
+                  </select>
+                </div>
+                <div class="cate_box">
+                  <select id="best">
+                    <option selected>--우수질문--</option>
+                    <option value="Y">Y</option>
+                    <option value="N">N</option>
                   </select>
                 </div>
               </div>
               <div class="table_wrap">
-                <h2>문의 리스트</h2>
+                <h2>이벤트1 리스트</h2>
                 <table>
                   <thead>
                     <tr>
                       <th>
                         <p>No</p>
-                      </th>
-                      <th>
-                        <p>문의 제목</p>
                       </th>
                       <th>
                         <p>이름</p>
@@ -143,7 +160,13 @@
                         <p>이메일</p>
                       </th>
                       <th>
-                        <p>답변 여부</p>
+                        <p>소속</p>
+                      </th>
+                      <th>
+                        <p>질문태그</p>
+                      </th>
+                      <th style="width: 100px">
+                        <p>우수 질문 여부</p>
                       </th>
                       <th>
                         <p>등록일</p>
@@ -156,16 +179,19 @@
                         <p>20</p>
                       </td>
                       <td>
-                        <p>샘플용 문의 제목 입니다.제목이에요</p>
-                      </td>
-                      <td>
                         <p>홍*동</p>
                       </td>
                       <td>
-                        <p>sample-us**@amail.com</p>
+                        <p>hong**@abc.com</p>
                       </td>
                       <td>
-                        <p>미답변</p>
+                        <p>대학원생</p>
+                      </td>
+                      <td>
+                        <p>태그2,태그3,태그4</p>
+                      </td>
+                      <td>
+                        <p>Y</p>
                       </td>
                       <td>
                         <p>2023.11.17.17:55</p>
@@ -176,16 +202,19 @@
                         <p>19</p>
                       </td>
                       <td>
-                        <p>샘플용 문의 제목 입니다.제목이에요</p>
+                        <p>홍*동</p>
                       </td>
                       <td>
-                        <p>조*슬</p>
+                        <p>hong**@abc.com</p>
                       </td>
                       <td>
-                        <p>sample-us**@amail.com</p>
+                        <p>대학원생</p>
                       </td>
                       <td>
-                        <p>답변 완료</p>
+                        <p>태그1,태그3</p>
+                      </td>
+                      <td>
+                        <p>N</p>
                       </td>
                       <td>
                         <p>2023.11.17.17:55</p>
@@ -196,16 +225,19 @@
                         <p>18</p>
                       </td>
                       <td>
-                        <p>샘플용 문의 제목 입니다.제목이에요</p>
+                        <p>홍*동</p>
                       </td>
                       <td>
-                        <p>김*의</p>
+                        <p>hong**@abc.com</p>
                       </td>
                       <td>
-                        <p>sample-us**@amail.com</p>
+                        <p>대학생</p>
                       </td>
                       <td>
-                        <p>미답변</p>
+                        <p>태그4,태그5</p>
+                      </td>
+                      <td>
+                        <p>N</p>
                       </td>
                       <td>
                         <p>2023.11.17.17:55</p>
@@ -216,16 +248,19 @@
                         <p>17</p>
                       </td>
                       <td>
-                        <p>샘플용 문의 제목 입니다.제목이에요</p>
+                        <p>홍*동</p>
                       </td>
                       <td>
-                        <p>이*우</p>
+                        <p>hong**@abc.com</p>
                       </td>
                       <td>
-                        <p>sample-us**@amail.com</p>
+                        <p>관련 업계 종사자</p>
                       </td>
                       <td>
-                        <p>미답변</p>
+                        <p>태그1,태그3</p>
+                      </td>
+                      <td>
+                        <p>N</p>
                       </td>
                       <td>
                         <p>2023.11.17.17:55</p>
@@ -236,16 +271,19 @@
                         <p>16</p>
                       </td>
                       <td>
-                        <p>샘플용 문의 제목 입니다.제목이에요</p>
+                        <p>홍*동</p>
                       </td>
                       <td>
-                        <p>최*민</p>
+                        <p>hong**@abc.com</p>
                       </td>
                       <td>
-                        <p>sample-us**@amail.com</p>
+                        <p>그 외</p>
                       </td>
                       <td>
-                        <p>답변 완료</p>
+                        <p>태그2,태그4</p>
+                      </td>
+                      <td>
+                        <p>N</p>
                       </td>
                       <td>
                         <p>2023.11.17.17:55</p>
@@ -256,16 +294,19 @@
                         <p>15</p>
                       </td>
                       <td>
-                        <p>샘플용 문의 제목 입니다.제목이에요</p>
-                      </td>
-                      <td>
                         <p>홍*동</p>
                       </td>
                       <td>
-                        <p>sample-us**@amail.com</p>
+                        <p>hong**@abc.com</p>
                       </td>
                       <td>
-                        <p>미답변</p>
+                        <p>대학원생</p>
+                      </td>
+                      <td>
+                        <p>태그2,태그3,태그4</p>
+                      </td>
+                      <td>
+                        <p>Y</p>
                       </td>
                       <td>
                         <p>2023.11.17.17:55</p>
@@ -276,16 +317,19 @@
                         <p>14</p>
                       </td>
                       <td>
-                        <p>샘플용 문의 제목 입니다.제목이에요</p>
+                        <p>홍*동</p>
                       </td>
                       <td>
-                        <p>조*슬</p>
+                        <p>hong**@abc.com</p>
                       </td>
                       <td>
-                        <p>sample-us**@amail.com</p>
+                        <p>대학원생</p>
                       </td>
                       <td>
-                        <p>답변 완료</p>
+                        <p>태그2,태그3,태그4</p>
+                      </td>
+                      <td>
+                        <p>Y</p>
                       </td>
                       <td>
                         <p>2023.11.17.17:55</p>
@@ -296,16 +340,19 @@
                         <p>13</p>
                       </td>
                       <td>
-                        <p>샘플용 문의 제목 입니다.제목이에요</p>
+                        <p>홍*동</p>
                       </td>
                       <td>
-                        <p>김*의</p>
+                        <p>hong**@abc.com</p>
                       </td>
                       <td>
-                        <p>sample-us**@amail.com</p>
+                        <p>대학원생</p>
                       </td>
                       <td>
-                        <p>미답변</p>
+                        <p>태그2,태그3,태그4</p>
+                      </td>
+                      <td>
+                        <p>Y</p>
                       </td>
                       <td>
                         <p>2023.11.17.17:55</p>
@@ -316,16 +363,19 @@
                         <p>12</p>
                       </td>
                       <td>
-                        <p>샘플용 문의 제목 입니다.제목이에요</p>
+                        <p>홍*동</p>
                       </td>
                       <td>
-                        <p>이*우</p>
+                        <p>hong**@abc.com</p>
                       </td>
                       <td>
-                        <p>sample-us**@amail.com</p>
+                        <p>대학원생</p>
                       </td>
                       <td>
-                        <p>미답변</p>
+                        <p>태그2,태그3,태그4</p>
+                      </td>
+                      <td>
+                        <p>Y</p>
                       </td>
                       <td>
                         <p>2023.11.17.17:55</p>
@@ -336,16 +386,19 @@
                         <p>11</p>
                       </td>
                       <td>
-                        <p>샘플용 문의 제목 입니다.제목이에요</p>
+                        <p>홍*동</p>
                       </td>
                       <td>
-                        <p>최*민</p>
+                        <p>hong**@abc.com</p>
                       </td>
                       <td>
-                        <p>sample-us**@amail.com</p>
+                        <p>대학원생</p>
                       </td>
                       <td>
-                        <p>답변 완료</p>
+                        <p>태그2,태그3,태그4</p>
+                      </td>
+                      <td>
+                        <p>Y</p>
                       </td>
                       <td>
                         <p>2023.11.17.17:55</p>
@@ -412,7 +465,7 @@
   <script>
     $(document).ready(function () {
       $(".table_wrap tbody tr").on("click", function () {
-        location.href = "./addqna.html";
+        location.href = "./eventView.html";
       });
     });
   </script>  

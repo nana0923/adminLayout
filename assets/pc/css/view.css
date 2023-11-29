@@ -3,10 +3,13 @@
 .itemBox .itemBoxTitle{margin-bottom:15px}
 .userInfoBox{display:flex;gap:20px}
 .userInfoBox>div{flex-grow:1}
-.userInfoBox input{border:1px solid #d9d9d9;width:100%;height:53px;border-radius:10px}
-.userinquiryBox div{background:#fff;padding:30px}
+.userInfoBox input{border:1px solid #d9d9d9;width:100%;height:53px;border-radius:10px; padding: 0 20px; font-size: 14px;}
+.userDateBox {width:100%; padding:30px;}
+.userDateBox div input {width:100%; font-size: 14px; padding: 20px; }
+.userinquiryBox div{background:hsl(0, 0%, 100%);padding:30px}
 .userAnswerBox textarea{width:100%;resize:none}
 .userAnswerBox textarea:focus{outline:0}
+.userImgBox img {background-color: #fff; display: block; width: 200px; height: 200px;}
 .btnBox{display:flex;gap:20px;justify-content:center;margin-top:52px}
 .btnBox button{width:144px;height:57px;font-family:Pretendard,sans-serif;font-size:18px;font-weight:500;line-height:25px}
 .btnBox .toList{background:#eaeaea;border-radius:6px}
